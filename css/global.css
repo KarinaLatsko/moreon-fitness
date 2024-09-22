@@ -1,0 +1,77 @@
+:root {
+  --general-bg: #00100F;
+  --general-text: #ffffff;
+  --accent-color: #33B0AA;
+  --transition: all .6s;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  line-height: 1.42;
+  background: var(--general-bg);
+  color: var(--general-text);
+}
+
+.body--opened-modal-about,
+.body--opened-modal-calc,
+.body--opened-modal-contact,
+.body--opened-modal-thanks,
+.body--opened-modal-freeze {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.main__hero {
+  margin: 0 auto;
+}
+
+.main__videomf {
+  margin-bottom: 120px;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  overflow: visible;
+}
+
+.button,
+.button-about {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.42;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(30px);
+  background: #ffffff33;
+  opacity: 0.8;
+  border-radius: 12px;
+  padding: 3px 15px;
+  height: 55px;
+  transition: var(--transition);
+}
+
+.button:hover,
+.button-about:hover {
+  opacity: 1;
+}

@@ -1,0 +1,3639 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moreon Fitness</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-connect">
+            <address class="header__top-tel">
+              <img src="img/icons/phone.svg" alt="">
+              <a class="header__top-number" href="tel:+74958590372">
+                +7 (495) 859-03-72
+              </a>
+            </address>
+            <address class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.21741 9.83065L0.300256 8.15147C-0.0975851 7.9802 -0.101038 7.3351 0.295674 7.15937L16.3718 0.0364807C16.7126 -0.114918 17.0643 0.228036 16.99 0.639099L14.1051 16.5778C14.0371 16.9541 13.6529 17.1247 13.3818 16.8984L9.44354 13.6144C9.20434 13.4149 8.87832 13.4256 8.64945 13.6398L6.46597 15.6843C6.2125 15.9223 5.83063 15.7897 5.73361 15.431L4.21741 9.83065ZM13.1448 3.5213L5.48923 8.93678C5.19581 9.14481 5.05765 9.55176 5.15245 9.93281L5.98017 13.2733C6.03894 13.51 6.3381 13.4857 6.36659 13.2411L6.58182 11.4093C6.62239 11.0644 6.76566 10.7466 6.98773 10.5092L13.3058 3.7638C13.4239 3.63792 13.2824 3.42424 13.1448 3.5213Z"
+                        fill="white" />
+                      <path
+                        d="M5.48945 8.93679L13.145 3.52131C13.2826 3.42425 13.4242 3.63793 13.306 3.76381L6.98795 10.5092C6.76588 10.7466 6.62261 11.0644 6.58204 11.4093L6.36681 13.2412C6.33832 13.4858 6.03916 13.51 5.98039 13.2733L5.15267 9.93282C5.05787 9.55176 5.19603 9.14482 5.48945 8.93679Z"
+                        fill="#E6E6E6" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.9356 0H5.06439C2.27187 0 0 2.27187 0 5.06439V11.9356C0 14.7281 2.27187 17 5.06439 17H11.9356C14.7281 17 17 14.7281 17 11.9356V5.06439C17 2.27187 14.7281 0 11.9356 0ZM15.2898 11.9356C15.2898 13.7881 13.788 15.2898 11.9356 15.2898H5.06436C3.21191 15.2898 1.71017 13.7881 1.71017 11.9356V5.06439C1.71017 3.2119 3.21191 1.71019 5.06436 1.71019H11.9356C13.788 1.71019 15.2898 3.2119 15.2898 5.06439V11.9356ZM4.10328 8.49998C4.10328 6.07561 6.07569 4.10321 8.50009 4.10321C10.9245 4.10321 12.8969 6.07558 12.8969 8.49998C12.8969 10.9244 10.9245 12.8968 8.50009 12.8968C6.07569 12.8968 4.10328 10.9244 4.10328 8.49998ZM8.50006 11.1866C7.01627 11.1866 5.81345 9.98379 5.81345 8.50001C5.81345 7.01622 7.01631 5.8134 8.50006 5.8134C9.98384 5.8134 11.1867 7.01622 11.1867 8.50001C11.1867 9.98376 9.98381 11.1866 8.50006 11.1866ZM13.959 4.13619C13.959 4.71806 13.4873 5.18975 12.9054 5.18975C12.3236 5.18975 11.8519 4.71806 11.8519 4.13619C11.8519 3.55432 12.3236 3.08262 12.9054 3.08262C13.4873 3.08262 13.959 3.55432 13.959 4.13619Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.6309 6.35846C15.1948 6.93074 15.79 7.46917 16.2958 8.09917C16.5192 8.37913 16.7307 8.66802 16.8925 8.99292C17.1218 9.45478 16.9142 9.96302 16.5157 9.9906L14.0391 9.98944C13.4004 10.0445 12.8908 9.77723 12.4624 9.32327C12.1195 8.96023 11.8019 8.57385 11.4722 8.19856C11.337 8.04517 11.1956 7.90084 11.0265 7.78675C10.6885 7.55864 10.395 7.62849 10.2018 7.99501C10.005 8.3678 9.96039 8.7806 9.94106 9.19607C9.91453 9.80226 9.73826 9.96163 9.15245 9.98938C7.90052 10.0507 6.71237 9.85387 5.60862 9.1974C4.63552 8.61867 3.88092 7.80168 3.22412 6.87674C1.94532 5.07571 0.966017 3.09667 0.0858558 1.06218C-0.112262 0.603809 0.032626 0.357757 0.519178 0.349048C1.32712 0.332734 2.13495 0.333895 2.94384 0.347887C3.27221 0.35288 3.4896 0.548653 3.61639 0.87111C4.05351 1.98833 4.58838 3.05127 5.25975 4.03652C5.43854 4.29883 5.62085 4.56114 5.88047 4.74576C6.16767 4.95019 6.38635 4.88243 6.52146 4.54987C6.6072 4.33901 6.64473 4.11188 6.66406 3.88603C6.72807 3.10904 6.7365 2.33337 6.62423 1.5591C6.55531 1.07588 6.29346 0.763063 5.82958 0.671621C5.59287 0.625 5.62812 0.533442 5.74273 0.392998C5.9418 0.150778 6.12902 0 6.50224 0H9.30119C9.74183 0.0903971 9.83969 0.296157 9.90001 0.757025L9.90241 3.98874C9.89761 4.16715 9.98815 4.69659 10.2973 4.81468C10.5447 4.89875 10.7078 4.69299 10.8563 4.5299C11.5265 3.79058 12.0047 2.91686 12.432 2.01214C12.6217 1.61432 12.7847 1.20117 12.9427 0.788377C13.0598 0.48206 13.2435 0.33134 13.5754 0.338017L16.2693 0.340513C16.3491 0.340513 16.43 0.341733 16.5073 0.355492C16.9612 0.435904 17.0856 0.638876 16.9454 1.09963C16.7245 1.82252 16.2947 2.42493 15.8745 3.03013C15.4252 3.67627 14.9448 4.30028 14.4993 4.95025C14.09 5.54378 14.1225 5.84295 14.6309 6.35846Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.98403 17H1.99401V8.97243H0V5.87895H1.99401V4.02323C1.99401 1.50139 3.11976 0 6.31836 0H8.98104V3.09349H7.31737C6.07186 3.09349 5.98902 3.52529 5.98902 4.3322L5.98403 5.87895H9L8.64671 8.97243H5.98403V17Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-menu">
+            <a class="burger-icon">
+              <span></span>
+            </a>
+            <a class="header__bottom-logo" href="/">
+              <img src="img/icons/logo/logo-white.svg" alt="Логотип компании moreon fitness">
+            </a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#videomf">О клубе</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#program">Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#about">Клубные карты</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#team">Команда</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Расписание</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#sauna">Бани и бассейны</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#children">Детский фитнес</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="main__hero hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__content-column">
+              <h1 class="hero__content-title title">Moreon <span>Fitness</span></h1>
+              <div class="hero__button">
+                <a class="button-about" href="#">
+                  Узнать подробнее
+                </a>
+                <a class="hero__button-price button" href="#">
+                  Рассчитать стоимость
+                </a>
+              </div>
+            </div>
+            <div class="hero__content-column">
+              <div class="hero__content-info">
+                <span>15 000 м²</span>
+                <p>для тренировок</p>
+              </div>
+              <div class="hero__content-info">
+                <span>600+</span>
+                <p>тренажеров</p>
+              </div>
+              <div class="hero__content-info">
+                <p>бассейны и СПА центр</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__video">
+          <video src="video/moreon-fitness-cut.webm" preload="auto" autoplay playsinline muted loop></video>
+        </div>
+      </section>
+
+      <section class="main__about about" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <h2 class="about__title title">
+              <span>В каждой</span> клубной карте
+            </h2>
+            <div class="about__info">
+              <div class="about__card">
+                <img src="img/icons/about-card/gym.svg" alt="">
+                <p class="about__text">
+                  Тренажерный зал
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/yoga.svg" alt="">
+                <p class="about__text">
+                  Групповые программы
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/swim.svg" alt="">
+                <p class="about__text">
+                  Бассейн
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/barbell-press.svg" alt="">
+                <p class="about__text">
+                  Вводные тренировки
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/martial-arts.png" alt="">
+                <p class="about__text">
+                  Единоборства
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/parking.svg" alt="">
+                <p class="about__text">
+                  Бесплатная парковка
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/medal.svg" alt="">
+                <p class="about__text">
+                  Клубная жизнь
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/diagnostics.svg" alt="">
+                <p class="about__text">
+                  Фитнес диагностика
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/towels.svg" alt="">
+                <p class="about__text">
+                  Полотенца
+                </p>
+              </div>
+              <div class="about__card">
+                <img src="img/icons/about-card/bathrobe.svg" alt="">
+                <p class="about__text">
+                  Халаты
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__discount discount">
+        <div class="container">
+          <div class="discount__inner">
+            <h2 class="discount__title title">
+              <span>Акции</span>
+            </h2>
+            <ul class="tab-controls">
+              <li class="tab-controls__item">
+                <a class="tab-controls__link tab-controls__link--active" href="#tab1">
+                  Аквапарк
+                </a>
+              </li>
+              <li class="tab-controls__item">
+                <a class="tab-controls__link" href="#tab2">
+                  Термы
+                </a>
+              </li>
+              <li class="tab-controls__item">
+                <a class="tab-controls__link" href="#tab3">
+                  СПА
+                </a>
+              </li>
+              <li class="tab-controls__item">
+                <a class="tab-controls__link" href="#tab4">
+                  Праздники
+                </a>
+              </li>
+              <li class="tab-controls__item">
+                <a class="tab-controls__link" href="#tab5">
+                  Фитнес
+                </a>
+              </li>
+              <li class="tab-controls__item">
+                <a class="tab-controls__link" href="#tab6">
+                  Боулинг
+                </a>
+              </li>
+            </ul>
+
+            <div class="discount__tab-content tab-content tab-content--show" id="tab1">
+              <button class="discount__prev discount__prev--aqua" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <button class="discount__next discount__next--aqua" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <div class="discount__slider discount__slider--aqua swiper">
+                <div class="discount__wrapper swiper-wrapper">
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-aqua"
+                      href="img/content/discounts-1.jpg">
+                      <img src="img/content/discounts-1.jpg" alt="Премиальный фитнес">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-aqua"
+                      href="img/content/discounts-2.jpg">
+                      <img src="img/content/discounts-2.jpg" alt="Получи месяц в подарок">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-aqua"
+                      href="img/content/discounts-3.jpg">
+                      <img src="img/content/discounts-3.jpg" alt="Презентация новой студии">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-aqua"
+                      href="img/content/discounts-1.jpg">
+                      <img src="img/content/discounts-1.jpg" alt="Премиальный фитнес">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-aqua"
+                      href="img/content/discounts-2.jpg">
+                      <img src="img/content/discounts-2.jpg" alt="Получи месяц в подарок">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-aqua"
+                      href="img/content/discounts-3.jpg">
+                      <img src="img/content/discounts-3.jpg" alt="Презентация новой студии">
+                    </a>
+                  </div>
+                </div>
+                <div class="discount__pagination discount__pagination--aqua"></div>
+              </div>
+            </div>
+
+            <div class="discount__tab-content tab-content" id="tab2">
+              <button class="discount__prev discount__prev--baths" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <button class="discount__next discount__next--baths" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <div class="discount__slider discount__slider--baths swiper">
+                <div class="discount__wrapper swiper-wrapper">
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-baths"
+                      href="img/content/discounts-4.jpg">
+                      <img src="img/content/discounts-4.jpg" alt="Скидка на клубную карту">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-baths"
+                      href="img/content/discounts-5.jpg">
+                      <img src="img/content/discounts-5.jpg" alt="Бокс для детей">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-baths"
+                      href="img/content/discounts-6.jpg">
+                      <img src="img/content/discounts-6.jpg" alt="Годовая карта выходного дня">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-baths"
+                      href="img/content/discounts-4.jpg">
+                      <img src="img/content/discounts-4.jpg" alt="Скидка на клубную карту">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-baths"
+                      href="img/content/discounts-5.jpg">
+                      <img src="img/content/discounts-5.jpg" alt="Бокс для детей">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-baths"
+                      href="img/content/discounts-6.jpg">
+                      <img src="img/content/discounts-6.jpg" alt="Годовая карта выходного дня">
+                    </a>
+                  </div>
+                </div>
+                <div class="discount__pagination discount__pagination--baths discount__pagination--bath"></div>
+              </div>
+            </div>
+
+            <div class="discount__tab-content tab-content" id="tab3">
+              <button class="discount__prev discount__prev--spa" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <button class="discount__next discount__next--spa" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <div class="discount__slider discount__slider--spa swiper">
+                <div class="discount__wrapper swiper-wrapper">
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-spa"
+                      href="img/content/discounts-7.jpg">
+                      <img src="img/content/discounts-7.jpg" alt="Скидка мастерам спорта на клубную карту">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-spa"
+                      href="img/content/discounts-8.jpg">
+                      <img src="img/content/discounts-8.jpg"
+                        alt="Открыт набор на занятия по единоборству и кроссфиту для детей от 6 лет">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-spa"
+                      href="img/content/discounts-9.jpg">
+                      <img src="img/content/discounts-9.jpg" alt="Открыт набор на детское плавание">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-spa"
+                      href="img/content/discounts-7.jpg">
+                      <img src="img/content/discounts-7.jpg" alt="Скидка мастерам спорта на клубную карту">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-spa"
+                      href="img/content/discounts-8.jpg">
+                      <img src="img/content/discounts-8.jpg"
+                        alt="Открыт набор на занятия по единоборству и кроссфиту для детей от 6 лет">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-spa"
+                      href="img/content/discounts-9.jpg">
+                      <img src="img/content/discounts-9.jpg" alt="Открыт набор на детское плавание">
+                    </a>
+                  </div>
+                </div>
+                <div class="discount__pagination discount__pagination--spa"></div>
+              </div>
+            </div>
+
+            <div class="discount__tab-content tab-content" id="tab4">
+              <button class="discount__prev discount__prev--holidays" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <button class="discount__next discount__next--holidays" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <div class="discount__slider discount__slider--holidays swiper">
+                <div class="discount__wrapper swiper-wrapper">
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-holidays"
+                      href="img/content/discounts-10.jpg">
+                      <img src="img/content/discounts-10.jpg" alt="Приводи друзей и получай подарки">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-holidays"
+                      href="img/content/discounts-11.jpg">
+                      <img src="img/content/discounts-11.jpg" alt="Привилегии для членов клуба Мореон Фитнес">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-holidays"
+                      href="img/content/discounts-7.jpg">
+                      <img src="img/content/discounts-7.jpg" alt="Скидка на клубные карты для школьников и студентов">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-holidays"
+                      href="img/content/discounts-10.jpg">
+                      <img src="img/content/discounts-10.jpg" alt="Приводи друзей и получай подарки">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-holidays"
+                      href="img/content/discounts-11.jpg">
+                      <img src="img/content/discounts-11.jpg" alt="Привилегии для членов клуба Мореон Фитнес">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-holidays"
+                      href="img/content/discounts-6.jpg">
+                      <img src="img/content/discounts-6.jpg" alt="Скидка на клубные карты для школьников и студентов">
+                    </a>
+                  </div>
+                </div>
+                <div class="discount__pagination discount__pagination--holidays"></div>
+              </div>
+            </div>
+
+            <div class="discount__tab-content tab-content" id="tab5">
+              <button class="discount__prev discount__prev--fitness" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <button class="discount__next discount__next--fitness" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <div class="discount__slider discount__slider--fitness swiper">
+                <div class="discount__wrapper swiper-wrapper">
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-fitness"
+                      href="img/content/discounts-11.jpg">
+                      <img src="img/content/discounts-11.jpg" alt="Фитнес для всей семьи">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-fitness"
+                      href="img/content/discounts-9.jpg">
+                      <img src="img/content/discounts-9.jpg" alt="Я выбираю премиум фитнес">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-fitness"
+                      href="img/content/discounts-5.jpg">
+                      <img src="img/content/discounts-5.jpg" alt="1 месяц в подарок только в июле">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-fitness"
+                      href="img/content/discounts-3.jpg">
+                      <img src="img/content/discounts-3.jpg" alt="Фитнес для всей семьи">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-fitness"
+                      href="img/content/discounts-4.jpg">
+                      <img src="img/content/discounts-4.jpg" alt="Я выбираю премиум фитнес">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-fitness"
+                      href="img/content/discounts-10.jpg">
+                      <img src="img/content/discounts-10.jpg" alt="1 месяц в подарок только в июле">
+                    </a>
+                  </div>
+                </div>
+                <div class="discount__pagination discount__pagination--fitness"></div>
+              </div>
+            </div>
+
+            <div class="discount__tab-content tab-content" id="tab6">
+              <button class="discount__prev discount__prev--bowling" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <button class="discount__next discount__next--bowling" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <div class="discount__slider discount__slider--bowling swiper">
+                <div class="discount__wrapper swiper-wrapper">
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-bowling"
+                      href="img/content/discounts-9.jpg">
+                      <img src="img/content/discounts-9.jpg" alt="Фитнес trade-in">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-bowling"
+                      href="img/content/discounts-8.jpg">
+                      <img src="img/content/discounts-8.jpg"
+                        alt="Открыт набор на занятия по единоборству и кроссфиту для детей от 6 лет">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-bowling"
+                      href="img/content/discounts-5.jpg">
+                      <img src="img/content/discounts-5.jpg" alt="Бокс для детей">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-bowling"
+                      href="img/content/discounts-11.jpg">
+                      <img src="img/content/discounts-11.jpg" alt="Скидка на клубные карты для школьников и студентов">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-bowling"
+                      href="img/content/discounts-10.jpg">
+                      <img src="img/content/discounts-10.jpg" alt="Приводи друзей и получай подарки">
+                    </a>
+                  </div>
+                  <div class="discount__slide swiper-slide">
+                    <a class="discount__link" data-fslightbox="discount__gallery-bowling"
+                      href="img/content/discounts-3.jpg">
+                      <img src="img/content/discounts-3.jpg" alt="Body art">
+                    </a>
+                  </div>
+                </div>
+                <div class="discount__pagination discount__pagination--bowling"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="main__program program" id="program">
+        <div class="container">
+          <div class="program__inner">
+            <h2 class="program__title title">
+              Формат, <span>который подойдет именно Вам</span>
+            </h2>
+            <ul class="tab-program">
+              <li class="tab-program__item">
+                <a class="tab-program__link tab-program__link--active" data-tab="tab_listin_1" href="#tab7">
+                  Тренажерный зал
+                </a>
+              </li>
+
+              <li class="tab-program__item">
+                <a class="tab-program__link" data-tab="tab_listin_2" href="#tab8">
+                  Групповые занятия
+                </a>
+              </li>
+              <li class="tab-program__item">
+                <a class="tab-program__link" data-tab="tab_listin_3" href="#tab9">
+                  Детские программы
+                </a>
+              </li>
+              <li class="tab-program__item">
+                <a class="tab-program__link" data-tab="tab_listin_4" href="#tab10">
+                  Красота и здоровье
+                </a>
+              </li>
+              <li class="tab-program__item">
+                <a class="tab-program__link" data-tab="tab_listin_5" href="#tab11">
+                  Авторские программы
+                </a>
+              </li>
+            </ul>
+            <div class="program__tab-content program-content program-content--show" id="tab7">
+              <ul class="tab-inside">
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link tab-inside__link--active" data-tab="tab_listin_1" href="#tab12">
+                    Кардиозона
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_1" href="#tab13">
+                    Зона блочных тренажеров линейки Selection
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_1" href="#tab14">
+                    Зона свободных весов
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_1" href="#tab15">
+                    Зона стретчинга и функционального тренинга
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_1" href="#tab16">
+                    Зона тренажеров KINESIS
+                  </a>
+                </li>
+              </ul>
+              <ul class="inside">
+                <li class="inside__tab-content inside-content inside-content--show" id="tab12">
+                  Беговые дорожки, велотренажеры, эллипсы, гребные тренажеры. Все кардиотренажеры оснащены панелями с
+                  сенсорным управлением, телевидением и выходом в интернет.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab13">
+                  Тренажеры для полной проработки всех групп мышц, увеличения мышечной массы и улучшения выносливости.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab14">
+                  Гантели и штанги, скамьи для жима, тренажер "Смита", силовые рамы и даже помост для тяги. Удовлетворит
+                  запросы любого, даже профессионального атлета
+                </li>
+                <li class="inside__tab-content inside-content" id="tab15">
+                  Оборудование для тренировок на все группы мышц и растяжки. Коврики, фитболы, BOSU, амортизаторы,
+                  бодибары, утяжелители
+                </li>
+                <li class="inside__tab-content inside-content" id="tab16">
+                  Тренажеры подходят для пользователей с любым уровнем подготовки, для различных тренировочных целей, в
+                  том числе реабилитации
+                </li>
+              </ul>
+
+            </div>
+            <div class="program__tab-content program-content" id="tab8">
+              <ul class="tab-inside">
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link tab-inside__link--active" data-tab="tab_listin_2" href="#tab19">
+                    Групповые занятия
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_2" href="#tab20">
+                    Аэробные программы
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_2" href="#tab21">
+                    Mind&Dody
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_2" href="#tab22">
+                    Аэробно-силовые программы
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_2" href="#tab23">
+                    Танцевальные программы
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_2" href="#tab24">
+                    Силовые программы
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_2" href="#tab25">
+                    Функциональный тренинг
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_2" href="#tab26">
+                    Боевые искусства
+                  </a>
+                </li>
+              </ul>
+              <ul class="inside">
+                <li class="inside__tab-content inside-content inside-content--show" id="tab19">
+                  Групповые занятия – отличный способ освоить упражнения и комплексы. Базовые программы направлены на
+                  оздоровление всего тела, снижение веса и коррекцию фигуры.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab20">
+                  Предназначены для повышения выносливости организма, способствуют снижению веса и ускорению
+                  метаболических процессов. Положительно влияют на сердечно-сосудистую систему.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab21">
+                  Осознанная работа над созданием красивого и здорового тела. Программа включает в себя как физические
+                  упражнения, так и дыхательные упражнения, направленные на единение тела с разумом.т
+                </li>
+                <li class="inside__tab-content inside-content" id="tab22">
+                  Объединяют в себе все фитнес-программы. За счет использования дополнительного оборудования
+                  прорабатывается мышечный каркас.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab23">
+                  Способствуют укреплению мышечного каркаса, повышают выносливость и улучшают настроение. В клубе
+                  представлены различные виды танцев: от современных до латины и зумбы.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab24">
+                  Помогают скорректировать осанку, модернизируют пропорции тела, повышают скоростно-силовые качества
+                  организма. В нашей зоне силовых тренировок Вы найдете множество тренажеров, которые подходят как для
+                  любителей, так и для профессиональных спортсменов.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab25">
+                  Комплекс упражнений, направленных на создание Вашего идеального тела. За счет постоянных занятий
+                  развиваются такие качества, как: мышечная сила, ловкость, быстрота реакции, выносливость, гибкость и
+                  координация, уходит лишний вес, улучшается композиция тела.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab26">
+                  Специальные тренировки, направленные на всестороннее развитие тела и уникальных навыков. В Мореон
+                  Фитнес
+                  представлены такие виды боевых искусств, как: бокс, тайский бокс, кикбоксинг, грепплинг, ММА.
+                </li>
+              </ul>
+            </div>
+            <div class="program__tab-content program-content" id="tab9">
+              <ul class="tab-inside">
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link tab-inside__link--active" data-tab="tab_listin_3" href="#tab27">
+                    Детское плавание
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_3" href="#tab28">
+                    Детские единоборства
+                  </a>
+                </li>
+              </ul>
+              <ul class="inside">
+                <li class="inside__tab-content inside-content inside-content--show" id="tab27">
+                  Групповые занятия – отличный способ освоить упражнения и комплексы. Базовые программы направлены на
+                  оздоровление всего тела, снижение веса и коррекцию фигуры.
+                </li>
+                <li class="inside__tab-content inside-content" id="tab28">
+                  Предназначены для повышения выносливости организма, способствуют снижению веса и ускорению
+                  метаболических процессов. Положительно влияют на сердечно-сосудистую систему.
+                </li>
+              </ul>
+            </div>
+            <div class="program__tab-content program-content" id="tab10">
+              <ul class="tab-inside">
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link tab-inside__link--active" data-tab="tab_listin_4" href="#tab29">
+                    Красота и здоровье
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_4" href="#tab30">
+                    SPA-центр
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_4" href="#tab31">
+                    Термальный комплекс
+                  </a>
+                </li>
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link" data-tab="tab_listin_4" href="#tab32">
+                    Солярий
+                  </a>
+                </li>
+              </ul>
+              <ul class="inside">
+                <li class="inside__tab-content inside-content inside-content--show" id="tab29">
+                  В Мореон Фитнес Вы можете посетить зону SPA. СПА-процедуры оказывает омолаживающие и релаксационное
+                  воздействие на кожу, заряжая позитивной энергией на длительное время! Кроме того, вы можете посетить
+                  наш
+                  термальный комплекс, где представлены 19 видов бань и саун со всего света!
+                </li>
+                <li class="inside__tab-content inside-content" id="tab30">
+                  Уникальный спа-комплекс в стиле острова Санторини для взрослых и детей старше 14 лет. 13 бань и саун,
+                  6
+                  гидромассажных бассейнов, соляная пещера
+                </li>
+                <li class="inside__tab-content inside-content" id="tab31">
+                  19 бань и саун разных мировых традиций, двухуровневый бассейн-лабиринт с контрастными ваннами,
+                  водопадами и рекой с реверсивным течением, лежаки с панорамным видом на березовую рощу
+                </li>
+                <li class="inside__tab-content inside-content" id="tab32">
+                  Регулярный загар в солярии способствует накоплению в организме витамина D. В Мореон Фитнес установлены
+                  солярии Luxura V7, в которых очень комфортно загорать.
+                </li>
+              </ul>
+            </div>
+            <div class="program__tab-content program-content" id="tab11">
+              <ul class="tab-inside">
+                <li class="tab-inside__item">
+                  <a class="tab-inside__link tab-inside__link--active" data-tab="tab_listin_5" href="#tab33">
+                    Авторские программы
+                  </a>
+                </li>
+              </ul>
+              <p class="inside__tab-content inside-content inside-content--show" id="tab33">
+                В нашем фитнес-клубе вы можете купить пакет индивидуальных занятий у личного тренера, и он разработает
+                для Вас комплексную авторскую программу тренировок, которая учитывает Ваши физические особенности и
+                цели.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__allyouneed allyouneed">
+        <div class="container">
+          <div class="allyouneed__inner">
+            <h2 class="allyouneed__title title">
+              <span>Все, что нужно для </span>эффективных тренировок
+            </h2>
+            <p class="allyouneed__main-text">
+              Многофункциональный отдых включает в себя тренировки, отдых и развлечения
+            </p>
+
+            <div class="allyouneed__inner-content">
+              <div class="allyouneed__inner-text allyouneed__inner-text--adaptive">
+                <h3>
+                  Спа-центр
+                </h3>
+                <p>
+                  «Мореон SPA» — уникальный банный спа-комплекс в стиле острова Санторини. Это самое большое
+                  спа-пространство в Москве, где можно отдохнуть от повседневного стресса.
+                </p>
+                <p>
+                  Здесь можно посетить бани и сауны, подышать в соляной пещере, пройтись по целительной дорожке Кнайпа,
+                  поплавать в бассейне, полежать в джакузи, а также воспользоваться спа-процедурами.
+                </p>
+              </div>
+              <div class="allyouneed__inner-slider">
+                <button class="allyouneed__prev allyouneed__prev--spacenter" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                      fill="white" fill-opacity="0.6" />
+                  </svg>
+                </button>
+                <button class="allyouneed__next allyouneed__next--spacenter" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                      fill="white" fill-opacity="0.6" />
+                  </svg>
+                </button>
+                <div class="allyouneed__slider allyouneed__slider--spacenter swiper">
+                  <div class="allyouneed__wrapper swiper-wrapper">
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-spacenter"
+                        href="img/content/spa-center.jpg">
+                        <img src="img/content/spa-center.jpg" alt="СПА-центр">
+                      </a>
+                    </div>
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-spacenter"
+                        href="img/content/spa-center2.jpg">
+                        <img src="img/content/spa-center2.jpg" alt="СПА-центр">
+                      </a>
+                    </div>
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-spacenter"
+                        href="img/content/spa-center3.jpg">
+                        <img src="img/content/spa-center3.jpg" alt="СПА-центр">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="allyouneed__pagination allyouneed__pagination--spacenter"></div>
+                </div>
+              </div>
+              <div class="allyouneed__inner-text allyouneed__inner-text--right">
+                <h3>
+                  Спа-центр
+                </h3>
+                <p>
+                  «Мореон SPA» — уникальный банный спа-комплекс в стиле острова Санторини. Это самое большое
+                  спа-пространство в Москве, где можно отдохнуть от повседневного стресса.
+                </p>
+                <p>
+                  Здесь можно посетить бани и сауны, подышать в соляной пещере, пройтись по целительной дорожке Кнайпа,
+                  поплавать в бассейне, полежать в джакузи, а также воспользоваться спа-процедурами.
+                </p>
+              </div>
+            </div>
+
+            <div class="allyouneed__inner-content">
+              <div class="allyouneed__inner-text">
+                <h3>
+                  Кафе и рестораны
+                </h3>
+                <p>
+                  После тренировки вы сможете перекусить и отдохнуть в ресторанах и кафе. В фитнесе находятся
+                  собственные барные зоны с разнообразным меню. Также в холле комплекса расположены рестораны «Порт» и
+                  «Остров».
+                </p>
+              </div>
+              <div class="allyouneed__inner-slider">
+                <button class="allyouneed__prev allyouneed__prev--cafe" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                      fill="white" fill-opacity="0.6" />
+                  </svg>
+                </button>
+                <button class="allyouneed__next allyouneed__next--cafe" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                      fill="white" fill-opacity="0.6" />
+                  </svg>
+                </button>
+                <div class="allyouneed__slider allyouneed__slider--cafe swiper">
+                  <div class="allyouneed__wrapper swiper-wrapper">
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-cafe"
+                        href="img/content/restaurant-port.jpg">
+                        <img src="img/content/restaurant-port.jpg" alt="Ресторан Порт">
+                      </a>
+                    </div>
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-cafe"
+                        href="img/content/restaurant-port2.jpg">
+                        <img src="img/content/restaurant-port2.jpg" alt="Ресторан Порт">
+                      </a>
+                    </div>
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-cafe"
+                        href="img/content/restaurant-port3.jpg">
+                        <img src="img/content/restaurant-port3.jpg" alt="Ресторан Порт">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="allyouneed__pagination allyouneed__pagination--cafe"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="allyouneed__inner-content">
+              <div class="allyouneed__inner-text allyouneed__inner-text--adaptive">
+                <h3>
+                  Ресепшн
+                </h3>
+                <p>
+                  При входе в Moreon Fitness Вас встретят и помогут с любым вопросом на ресепшене. Радушный коллектив
+                  фитнес-центра проведет экскурсию по комплексу. Также вы можете связаться с нами по телефону
+                  <a href="tel:+74958590370">
+                    +7 (495) 859-03-70
+                  </a>
+                </p>
+              </div>
+              <div class="allyouneed__inner-slider">
+                <button class="allyouneed__prev allyouneed__prev--reception" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                      fill="white" fill-opacity="0.6" />
+                  </svg>
+                </button>
+                <button class="allyouneed__next allyouneed__next--reception" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                      fill="white" fill-opacity="0.6" />
+                  </svg>
+                </button>
+                <div class="allyouneed__slider allyouneed__slider--reception swiper">
+                  <div class="allyouneed__wrapper swiper-wrapper">
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-reception"
+                        href="img/content/reseption-bar.jpg">
+                        <img src="img/content/reseption-bar.jpg" alt="Ресепшн">
+                      </a>
+                    </div>
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-reception"
+                        href="img/content/reseption-bar3.jpg">
+                        <img src="img/content/reseption-bar3.jpg" alt="Ресепшн">
+                      </a>
+                    </div>
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-reception"
+                        href="img/content/reseption-bar2.jpg">
+                        <img src="img/content/reseption-bar2.jpg" alt="Ресепшн">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="allyouneed__pagination allyouneed__pagination--reception"></div>
+                </div>
+              </div>
+              <div class="allyouneed__inner-text allyouneed__inner-text--right">
+                <h3>
+                  Ресепшн
+                </h3>
+                <p>
+                  При входе в Moreon Fitness Вас встретят и помогут с любым вопросом на ресепшене. Радушный коллектив
+                  фитнес-центра проведет экскурсию по комплексу. Также вы можете связаться с нами по телефону
+                  <a href="tel:+74958590370">
+                    +7 (495) 859-03-70
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="allyouneed__inner-content">
+              <div class="allyouneed__inner-text">
+                <h3>
+                  Отдел продаж
+                </h3>
+                <p>
+                  По вопросам оформления карты и всем расценкам обращайтесь в отдел продаж.
+                </p>
+              </div>
+              <div class="allyouneed__inner-slider">
+                <button class="allyouneed__prev allyouneed__prev--sale" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                      fill="white" fill-opacity="0.6" />
+                  </svg>
+                </button>
+                <button class="allyouneed__next allyouneed__next--sale" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                      fill="white" fill-opacity="0.6" />
+                  </svg>
+                </button>
+                <div class="allyouneed__slider allyouneed__slider--sale swiper">
+                  <div class="allyouneed__wrapper swiper-wrapper">
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-sale"
+                        href="img/content/sales-department.jpg">
+                        <img src="img/content/sales-department.jpg" alt="Отдел продаж">
+                      </a>
+                    </div>
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-sale"
+                        href="img/content/sales-department2.jpg">
+                        <img src="img/content/sales-department2.jpg" alt="Отдел продаж">
+                      </a>
+                    </div>
+                    <div class="allyouneed__slide swiper-slide">
+                      <a class="allyouneed__link" data-fslightbox="allyouneed__gallery-sale"
+                        href="img/content/sales-department3.jpg">
+                        <img src="img/content/sales-department3.jpg" alt="Отдел продаж">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="allyouneed__pagination allyouneed__pagination--sale"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="main__team team" id="team">
+        <div class="container">
+          <div class="team__inner">
+            <h2 class="team__title title">
+              <span>Команда</span>
+            </h2>
+
+            <div class="team__inner-slider">
+              <button class="team__prev" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <button class="team__next" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <div class="team__slider swiper">
+                <div class="team__wrapper swiper-wrapper">
+
+                  <div class="team__slide swiper-slide team-slide--hidden">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="team__slide swiper-slide team-slide--hidden">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="team__slide swiper-slide team-slide--hidden">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="team__slide swiper-slide team__slide--adaptive team-slide--hidden">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="team__slide swiper-slide team__slide--adaptive team-slide--hidden">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="team__slide swiper-slide team__slide--adaptive team-slide--hidden">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                    <div class="team__card team__card--hidden">
+                      <a class="team__link" data-fslightbox="gallery-team-adaptive" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-1.jpg">
+                        <img src="img/content/team-1.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-2.jpg">
+                        <img src="img/content/team-2.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-3.jpg">
+                        <img src="img/content/team-3.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-4.jpg">
+                        <img src="img/content/team-4.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-5.jpg">
+                        <img src="img/content/team-5.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-6.jpg">
+                        <img src="img/content/team-6.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-7.jpg">
+                        <img src="img/content/team-7.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__slide swiper-slide team-slide--show">
+                    <div class="team__card">
+                      <a class="team__link" data-fslightbox="gallery-team-show" href="img/content/team-8.jpg">
+                        <img src="img/content/team-8.jpg" alt="Тренер">
+                      </a>
+                      <div class="team__name">
+                        <span>Иван Иванов</span>
+                        <p>Мастер тренер. Элит тренер</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="team__pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__videomf videomf" id="videomf">
+        <div class="container">
+          <div class="videomf__inner">
+            <h2 class="videomf__title title">
+              <span>Видео о клубе</span> Moreon Fitness
+            </h2>
+            <div class="videomf__video">
+              <video id="moreonVideo" src="video/moreon-fitness-cut.webm" controls preload="auto" playsinline loop></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__areas areas">
+        <div class="container">
+          <div class="areas__inner">
+            <h2 class="areas__title title">
+              Зоны <span>фитнес клуба</span>
+            </h2>
+            <ul class="areas-controls">
+              <li class="areas-controls__item">
+                <a class="areas-controls__link areas-controls__link--active" href="#tab34">
+                  Зал групповых тренировок
+                </a>
+              </li>
+              <li class="areas-controls__item">
+                <a class="areas-controls__link" href="#tab35">
+                  Тренажерный зал
+                </a>
+              </li>
+              <li class="areas-controls__item">
+                <a class="areas-controls__link" href="#tab36">
+                  Зал кардио тренажеров
+                </a>
+              </li>
+              <li class="areas-controls__item">
+                <a class="areas-controls__link" href="#tab37">
+                  Зал единоборств
+                </a>
+              </li>
+            </ul>
+
+            <div class="areas__tab-content areas-content areas-content--show" id="tab34">
+              <div class="areas__tab-inner">
+                <div class="areas__tab-inner-slider">
+                  <button class="areas__prev areas__prev--group" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <button class="areas__next areas__next--group" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <div class="areas__slider areas__slider--group-main swiper">
+                    <div class="areas__wrapper swiper-wrapper">
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-group" href="img/content/areas8.jpg">
+                          <img src="img/content/areas8.jpg" alt="Зал групповых тренировок-1">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-group" href="img/content/areas12.jpg">
+                          <img src="img/content/areas12.jpg" alt="Зал групповых тренировок-2">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-group" href="img/content/areas14.jpg">
+                          <img src="img/content/areas14.jpg" alt="Зал групповых тренировок-3">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-group" href="img/content/areas13.jpg">
+                          <img src="img/content/areas13.jpg" alt="Зал групповых тренировок-4">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-group" href="img/content/areas8.jpg">
+                          <img src="img/content/areas8.jpg" alt="Зал групповых тренировок-1">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-group" href="img/content/areas12.jpg">
+                          <img src="img/content/areas12.jpg" alt="Зал групповых тренировок-2">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-group" href="img/content/areas14.jpg">
+                          <img src="img/content/areas14.jpg" alt="Зал групповых тренировок-3">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-group" href="img/content/areas13.jpg">
+                          <img src="img/content/areas13.jpg" alt="Зал групповых тренировок-4">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="areas__slider areas__slider--group-thumbs swiper">
+                    <div class="areas__wrapper swiper-wrapper">
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas8-th.jpg" alt="Зал групповых тренировок-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas12-th.jpg" alt="Зал групповых тренировок-2">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas14-th.jpg" alt="Зал групповых тренировок-3">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas13-th.jpg" alt="Зал групповых тренировок-4">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas8-th.jpg" alt="Зал групповых тренировок-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas12-th.jpg" alt="Зал групповых тренировок-2">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas14-th.jpg" alt="Зал групповых тренировок-3">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas13-th.jpg" alt="Зал групповых тренировок-4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="areas__tab-inner-info">
+                  <h3>
+                    Зал групповых тренировок
+                  </h3>
+                  <p>
+                    Тренажерный зал оборудован гантельным рядом (от 1 до 40 кг), множеством силовых тренажеров и набором
+                    штанг.
+                  </p>
+                  <p>
+                    Под каждую группу мышц есть как минимум 5 разновидностей оборудования.
+                  </p>
+                </div>
+                <a class="areas__button button-about" href="#">
+                  Записаться на гостевой визит
+                </a>
+              </div>
+            </div>
+
+            <div class="areas__tab-content areas-content" id="tab35">
+              <div class="areas__tab-inner">
+                <div class="areas__tab-inner-slider">
+                  <button class="areas__prev areas__prev--gym" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <button class="areas__next areas__next--gym" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <div class="areas__slider areas__slider--gym-main swiper">
+                    <div class="areas__wrapper swiper-wrapper">
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-gym" href="img/content/areas4.jpg">
+                          <img src="img/content/areas4.jpg" alt="Тренажерный зал-1">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-gym" href="img/content/areas5.jpg">
+                          <img src="img/content/areas5.jpg" alt="Тренажерный зал-2">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-gym" href="img/content/areas6.jpg">
+                          <img src="img/content/areas6.jpg" alt="Тренажерный зал-3">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-gym" href="img/content/areas-main-1.jpg">
+                          <img src="img/content/areas-main-1.jpg" alt="Тренажерный зал-4">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-gym" href="img/content/areas4.jpg">
+                          <img src="img/content/areas4.jpg" alt="Тренажерный зал-1">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-gym" href="img/content/areas5.jpg">
+                          <img src="img/content/areas5.jpg" alt="Тренажерный зал-2">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-gym" href="img/content/areas6.jpg">
+                          <img src="img/content/areas6.jpg" alt="Тренажерный зал-3">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-gym" href="img/content/areas-main-1.jpg">
+                          <img src="img/content/areas-main-1.jpg" alt="Тренажерный зал-4">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="areas__slider areas__slider--gym-thumbs swiper">
+                    <div class="areas__wrapper swiper-wrapper">
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas4-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas5-th.jpg" alt="Тренажерный зал-2">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-4.jpg" alt="Тренажерный зал-3">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-1.jpg" alt="Тренажерный зал-4">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas4-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas5-th.jpg" alt="Тренажерный зал-2">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-4.jpg" alt="Тренажерный зал-3">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-1.jpg" alt="Тренажерный зал-4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="areas__tab-inner-info">
+                  <h3>
+                    Тренажерный зал
+                  </h3>
+                  <p>
+                    Разделен на несколько зон: зона свободных весов, зона силовых тренажеров и кардио.
+                  </p>
+                  <p>
+                    Новейшее премиальное оборудование Matrix и Technogym поможет добиться лучших результатов.
+                  </p>
+                </div>
+                <a class="areas__button button-about" href="#">
+                  Записаться на гостевой визит
+                </a>
+              </div>
+            </div>
+
+            <div class="areas__tab-content areas-content" id="tab36">
+              <div class="areas__tab-inner">
+                <div class="areas__tab-inner-slider">
+                  <button class="areas__prev areas__prev--cardio" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <button class="areas__next areas__next--cardio" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <div class="areas__slider areas__slider--cardio-main swiper">
+                    <div class="areas__wrapper swiper-wrapper">
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-cardio"
+                          href="img/content/areas-main-1.jpg">
+                          <img src="img/content/areas-main-1.jpg" alt="Зал кардио тренажеров-1">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-cardio" href="img/content/areas10.jpg">
+                          <img src="img/content/areas10-main.jpg" alt="Зал кардио тренажеров-2">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-cardio"
+                          href="img/content/areas-main-3.jpg">
+                          <img src="img/content/areas-main-3.jpg" alt="Зал кардио тренажеров-3">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-cardio"
+                          href="img/content/areas-main-4.jpg">
+                          <img src="img/content/areas-main-4big.jpg" alt="Зал кардио тренажеров-4">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-cardio"
+                          href="img/content/areas-main-1.jpg">
+                          <img src="img/content/areas-main-1.jpg" alt="Зал кардио тренажеров-1">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-cardio" href="img/content/areas10.jpg">
+                          <img src="img/content/areas10-main.jpg" alt="Зал кардио тренажеров-2">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-cardio"
+                          href="img/content/areas-main-3.jpg">
+                          <img src="img/content/areas-main-3.jpg" alt="Зал кардио тренажеров-3">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-cardio"
+                          href="img/content/areas-main-4.jpg">
+                          <img src="img/content/areas-main-4big.jpg" alt="Зал кардио тренажеров-4">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="areas__slider areas__slider--cardio-thumbs swiper">
+                    <div class="areas__wrapper swiper-wrapper">
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-1.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas10-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-3.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-4.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-1.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas10-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-3.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas-thumbs-4.jpg" alt="Тренажерный зал-1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="areas__tab-inner-info">
+                  <h3>
+                    Зал кардио тренажеров
+                  </h3>
+                  <p>
+                    В этой зоне представлены самые актуальные мировые фитнес-тренды, тренажеры Matrix, которые
+                    предлагают интерактивный формат занятий, вы можете подключить свои устройства и отслеживать
+                    показатели на экране.
+                  </p>
+                </div>
+                <a class="areas__button button-about" href="#">
+                  Записаться на гостевой визит
+                </a>
+              </div>
+            </div>
+
+            <div class="areas__tab-content areas-content" id="tab37">
+              <div class="areas__tab-inner">
+                <div class="areas__tab-inner-slider">
+                  <button class="areas__prev areas__prev--combat" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <button class="areas__next areas__next--combat" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <div class="areas__slider areas__slider--combat-main swiper">
+                    <div class="areas__wrapper swiper-wrapper">
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-combat" href="img/content/areas11.jpg">
+                          <img src="img/content/areas11.jpg" alt="Зал единоборств-1">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-combat" href="img/content/areas15.jpg">
+                          <img src="img/content/areas15.jpg" alt="Зал единоборств-2">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-combat" href="img/content/areas17.jpg">
+                          <img src="img/content/areas17.jpg" alt="Зал единоборств-3">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-combat" href="img/content/areas18.jpg">
+                          <img src="img/content/areas18.jpg" alt="Зал единоборств-4">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-combat" href="img/content/areas11.jpg">
+                          <img src="img/content/areas11.jpg" alt="Зал единоборств-1">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-combat" href="img/content/areas15.jpg">
+                          <img src="img/content/areas15.jpg" alt="Зал единоборств-2">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-combat" href="img/content/areas17.jpg">
+                          <img src="img/content/areas17.jpg" alt="Зал единоборств-3">
+                        </a>
+                      </div>
+                      <div class="areas__slide swiper-slide">
+                        <a class="areas__link" data-fslightbox="areas__gallery-combat" href="img/content/areas18.jpg">
+                          <img src="img/content/areas18.jpg" alt="Зал единоборств-4">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="areas__slider areas__slider--combat-thumbs swiper">
+                    <div class="areas__wrapper swiper-wrapper">
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas11-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas15-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas17-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas18-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas11-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas15-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas17-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                      <div class="areas__slide-thumbs swiper-slide">
+                        <img src="img/content/areas18-th.jpg" alt="Тренажерный зал-1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="areas__tab-inner-info">
+                  <h3>
+                    Зал единоборств
+                  </h3>
+                  <p>
+                    Более 500 м² для новых побед, оборудование Foreman, ринг на подиуме, Октагон, клетка BJJ, 12
+                    боксерских мешков, 2 пневмогруши, покрытие татами, 2 груши на растяжках, 4 настенных подушки,
+                    тренажер вертушка
+                  </p>
+                </div>
+                <a class="areas__button button-about" href="#">
+                  Записаться на гостевой визит
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="main__questions questions">
+        <div class="container">
+          <div class="questions__inner">
+            <h2 class="questions__title title">
+              <span>Часто задаваемые</span> вопросы
+            </h2>
+            <ul class="accordion-list">
+              <li class="accordion-list__item">
+                <a class="accordion-list__control" href="#">
+                  <h3 class="accordion-list__control-title">
+                    Что входит в клубную карту
+                  </h3>
+                  <div class="accordion-list__control-icon">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.66401 8.64131L0.346191 2.09154C-0.115396 1.61247 -0.115396 0.837762 0.346191 0.35869C0.807778 -0.119563 1.55578 -0.119563 2.01737 0.35869L7.49961 6.04286L12.9826 0.35869C13.4442 -0.119563 14.1922 -0.119563 14.6538 0.35869C15.1154 0.837762 15.1154 1.61247 14.6538 2.09154L8.3352 8.64131C7.87361 9.11956 7.1256 9.11956 6.66401 8.64131Z"
+                        fill="#33B0AA" />
+                    </svg>
+                  </div>
+                </a>
+                <ul class="accordion-list__content">
+                  <li class="accordion-list__content-item">
+                    Тренажерный зал 600+ тренажеров TechnoGym и Matrix
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Бассейн 25 метров 5 дорожек
+                  </li>
+                  <li class="accordion-list__content-item">
+                    45 видов групповых программ
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Единоборства
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Полотенце+халат
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Сейфовые ячейки
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Вводные персональные тренировки с тренером
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Фитнес диагностика
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Клубная жизнь
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Бесплатная парковка
+                  </li>
+                  <li class="accordion-list__content-item">
+                    Система лояльности
+                  </li>
+                  <li class="accordion-list__content-item">
+                    скидка -20% в ресторанах «Порт» и «Остров»
+                  </li>
+                  <li class="accordion-list__content-item">
+                    скидка 15% на дополнительные услуги в день рождения
+                  </li>
+                  <li class="accordion-list__content-item">
+                    скидка 10% на все дополнительные услуги фитнес центра
+                  </li>
+                  <li class="accordion-list__content-item">
+                    скидка на дополнительные услуги спа-центра предоставляется держателям клубных карт «Депозит»
+                  </li>
+                  <li class="accordion-list__content-item">
+                    100 тысяч - 10%
+                  </li>
+                  <li class="accordion-list__content-item">
+                    250 тысяч - 15%
+                  </li>
+                  <li class="accordion-list__content-item">
+                    500 тысяч - 20%
+                  </li>
+                </ul>
+              </li>
+              <li class="accordion-list__item">
+                <a class="accordion-list__control" href="#">
+                  <h3 class="accordion-list__control-title">
+                    Можно ли посещать Термы и СПА
+                  </h3>
+                  <div class="accordion-list__control-icon">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.66401 8.64131L0.346191 2.09154C-0.115396 1.61247 -0.115396 0.837762 0.346191 0.35869C0.807778 -0.119563 1.55578 -0.119563 2.01737 0.35869L7.49961 6.04286L12.9826 0.35869C13.4442 -0.119563 14.1922 -0.119563 14.6538 0.35869C15.1154 0.837762 15.1154 1.61247 14.6538 2.09154L8.3352 8.64131C7.87361 9.11956 7.1256 9.11956 6.66401 8.64131Z"
+                        fill="#33B0AA" />
+                    </svg>
+                  </div>
+                </a>
+                <ul class="accordion-list__content">
+                  <li class="accordion-list__content-item">
+                    В нашем клубе 2 банных комплекса Термальный и СПА.
+                  </li>
+                  <li class="accordion-list__content-item">
+                    <div class="accordion-list__content-inside">
+                      <h4>
+                        Банный СПА комплекс только для гостей, старше 14 лет и включает в себя:
+                      </h4>
+                      <ul>
+                        <li class="accordion-list__content-inside-list">
+                          13 бань и саун (русская парная из кедра, хаммам, финская сауна, греческая сауна, римская
+                          сауна,
+                        </li>
+                        <li class="accordion-list__content-inside-list">
+                          аромасауна, инфракрасные сауны, соляная пещера)
+                        </li>
+                        <li class="accordion-list__content-inside-list">
+                          джакузи с видом на березовую рощу
+                        </li>
+                        <li class="accordion-list__content-inside-list">
+                          лазурный бассейн
+                        </li>
+                        <li class="accordion-list__content-inside-list">
+                          дорожка Кнайпа (контрастные ванны для ног).
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion-list__content-item">
+                    <div class="accordion-list__content-inside">
+                      <h4>Банный комплекс Термы – это:</h4>
+                      <ul>
+                        <li class="accordion-list__content-inside-list">
+                          16 бань и саун
+                        </li>
+                        <li class="accordion-list__content-inside-list">
+                          9 бассейнов, в том числе двухэтажный бассейн лабиринт
+                        </li>
+                        <li class="accordion-list__content-inside-list">
+                          расслабляющие бассейны с гидро- и аэромассажем
+                        </li>
+                        <li class="accordion-list__content-inside-list">
+                          ледяная пещера
+                        </li>
+                        <li class="accordion-list__content-inside-list">
+                          дорожка Кнайпа.
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion-list__content-item">
+                    При оформлении клубной карты с банными зонами вам становятся доступны все эти услуги.
+                    <br>
+                    За более подробной консультацией по тарифам и стоимости вы можете обратиться в отдел продаж по
+                    телефону
+                    <a href="tel:+74958590372">
+                      +7(495)859-03-72
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="accordion-list__item">
+                <a class="accordion-list__control" href="#">
+                  <h3 class="accordion-list__control-title">
+                    Есть ли заморозка
+                  </h3>
+                  <div class="accordion-list__control-icon">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.66401 8.64131L0.346191 2.09154C-0.115396 1.61247 -0.115396 0.837762 0.346191 0.35869C0.807778 -0.119563 1.55578 -0.119563 2.01737 0.35869L7.49961 6.04286L12.9826 0.35869C13.4442 -0.119563 14.1922 -0.119563 14.6538 0.35869C15.1154 0.837762 15.1154 1.61247 14.6538 2.09154L8.3352 8.64131C7.87361 9.11956 7.1256 9.11956 6.66401 8.64131Z"
+                        fill="#33B0AA" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  Наши клубные карты дают возможность клиентам замораживать свой абонемент. Количество дней заморозки
+                  идет исходя из выбранного вами тарифа.
+                  <br>
+                  За более подробной консультацией по тарифам и стоимости вы можете обратиться в отдел продаж по
+                  телефону
+                  <a href="tel:+74958590372">
+                    +7 (495)859-03-72
+                  </a>
+                </div>
+              </li>
+              <li class="accordion-list__item">
+                <a class="accordion-list__control" href="#">
+                  <h3 class="accordion-list__control-title">
+                    Есть ли рассрочка
+                  </h3>
+                  <div class="accordion-list__control-icon">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.66401 8.64131L0.346191 2.09154C-0.115396 1.61247 -0.115396 0.837762 0.346191 0.35869C0.807778 -0.119563 1.55578 -0.119563 2.01737 0.35869L7.49961 6.04286L12.9826 0.35869C13.4442 -0.119563 14.1922 -0.119563 14.6538 0.35869C15.1154 0.837762 15.1154 1.61247 14.6538 2.09154L8.3352 8.64131C7.87361 9.11956 7.1256 9.11956 6.66401 8.64131Z"
+                        fill="#33B0AA" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  Мы предлагаем рассрочку без переплат на любые виды карт.
+                  <br>
+                  Оформление рассрочки производится через платформу POSCREDIT ООО «КРЕДИТНЫЕ СИСТЕМЫ»
+                  <br>
+                  (партнеры платформы:, ПАО Почта Банк, ПАО ВОСТОЧНЫЙ ЭКСПРЕСС БАНК, ПАО МТС БАНК, АО БАНК РУССКИЙ
+                  <br>
+                  СТАНДАРТ, АО Кредит Европа Банк , АО ОТП Банк)
+                </div>
+              </li>
+              <li class="accordion-list__item">
+                <a class="accordion-list__control" href="#">
+                  <h3 class="accordion-list__control-title">
+                    Корпоративное членство
+                  </h3>
+                  <div class="accordion-list__control-icon">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.66401 8.64131L0.346191 2.09154C-0.115396 1.61247 -0.115396 0.837762 0.346191 0.35869C0.807778 -0.119563 1.55578 -0.119563 2.01737 0.35869L7.49961 6.04286L12.9826 0.35869C13.4442 -0.119563 14.1922 -0.119563 14.6538 0.35869C15.1154 0.837762 15.1154 1.61247 14.6538 2.09154L8.3352 8.64131C7.87361 9.11956 7.1256 9.11956 6.66401 8.64131Z"
+                        fill="#33B0AA" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  Мореон Фитнес открыт для сотрудничества по корпоративным программам лояльности.
+                  <br>
+                  Вашей команде мы сделаем скидки на клубные карты с посещением банного комплекса Термы и пространства
+                  СПA.
+                  <br>
+                  Размер скидки рассчитываем индивидуально: от 10 до 19 человек – скидка до 20%, от 20 человек – скидка
+                  до 30% и более.
+                  <br>
+                  Получите персональное предложение для своей компании, и пусть работа будет в удовольствие!
+                </div>
+              </li>
+              <li class="accordion-list__item">
+                <a class="accordion-list__control" href="#">
+                  <h3 class="accordion-list__control-title">
+                    Входят ли занятия с тренером в карту
+                  </h3>
+                  <div class="accordion-list__control-icon">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.66401 8.64131L0.346191 2.09154C-0.115396 1.61247 -0.115396 0.837762 0.346191 0.35869C0.807778 -0.119563 1.55578 -0.119563 2.01737 0.35869L7.49961 6.04286L12.9826 0.35869C13.4442 -0.119563 14.1922 -0.119563 14.6538 0.35869C15.1154 0.837762 15.1154 1.61247 14.6538 2.09154L8.3352 8.64131C7.87361 9.11956 7.1256 9.11956 6.66401 8.64131Z"
+                        fill="#33B0AA" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  <h4 class="accordion-list__content-title">
+                    В клубную карту входят:
+                  </h4>
+                  <ul>
+                    <li class="accordion-list__content-list">
+                      Фитнес-тестирование с тренером клуба
+                    </li>
+                    <li class="accordion-list__content-list">
+                      Стартовая персональная тренировка в тренажёрном зале
+                    </li>
+                    <li class="accordion-list__content-list">
+                      Стартовая персональная тренировка в бассейне
+                    </li>
+                    <li class="accordion-list__content">
+                      Стартовая персональная тренировка по единоборствам
+                    </li>
+                    <li class="accordion-list__content">
+                      Стартовая персональная тренировка по любому направлению из групповых.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="accordion-list__item">
+                <a class="accordion-list__control" href="#">
+                  <h3 class="accordion-list__control-title">
+                    Какой срок действия клубной карты
+                  </h3>
+                  <div class="accordion-list__control-icon">
+                    <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.66401 8.64131L0.346191 2.09154C-0.115396 1.61247 -0.115396 0.837762 0.346191 0.35869C0.807778 -0.119563 1.55578 -0.119563 2.01737 0.35869L7.49961 6.04286L12.9826 0.35869C13.4442 -0.119563 14.1922 -0.119563 14.6538 0.35869C15.1154 0.837762 15.1154 1.61247 14.6538 2.09154L8.3352 8.64131C7.87361 9.11956 7.1256 9.11956 6.66401 8.64131Z"
+                        fill="#33B0AA" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="accordion-list__content">
+                  В нашему клубе вы можете оформить клубную карту от 3-х месяцев до 12-ти.
+                  <br>
+                  Наши менеджеры окажут вам поддержку и помощь в выборе тарифа подходящего именно вам.
+                  <br>
+                  Связаться с отделом продаж вы можете по телефону
+                  <a href="tel:+74958590372">
+                    +7 (495)859-03-72
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__apps apps">
+        <div class="container">
+          <div class="apps__inner">
+            <div class="apps__wrapper">
+              <div class="apps__img">
+                <img src="img/content/phons.png" alt="">
+              </div>
+              <div class="apps__content">
+                <h2 class="apps__title title">
+                  <span>Приложение</span> Moreon Fitness
+                </h2>
+                <div class="apps__text">
+                  <p>
+                    В нашем приложении вы можете записаться на тренировку, заморозить карту, задать интересующие вас
+                    вопросы, быть в курсе расписания групповых занятий, а также следить на всеми нашими новостями и
+                    обновлениями.
+                  </p>
+                  <p>
+                    Забудьте о карте клуба, теперь достаточно получить штрих код и показать его с телефона.
+                  </p>
+                </div>
+                <div class="applications apps__list">
+                  <a class="applications__link" href="https://play.google.com" target="_blank">
+                    <img src="img/decor/google-play.png" alt="Google-play">
+                  </a>
+                  <a class="applications__link" href="https://www.apple.com/app-store/" target="_blank">
+                    <img src="img/decor/app-store.png" alt="App-store">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__freeze freeze">
+        <div class="container">
+          <div class="freeze__inner">
+            <h2 class="freeze__title title">
+              <span>Заморозь свою </span>карту Moreon
+            </h2>
+            <div class="freeze__wrapper">
+              <div class="freeze__text">
+                <p>
+                  Если у вас появилась потребность заморозить клубную карту, вы можете сделать это в приложении, на
+                  сайте, через вашего персонального менеджера, если данная услуга предусмотрена Договором.
+                  <br>
+                  Минимальная продолжительность приостановления действия Клубной карты составляет 10 календарных дней.
+                </p>
+                <p>
+                  Заморозка – лучший помощник в ситуациях, когда нужно отложить занятия фитнесом.
+              </div>
+              <a class="button-freeze button" href="#">
+                Заморозить карту
+              </a>
+              <div class="freeze__img">
+                <img src="img/content/freeze.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__benefits benefits">
+        <div class="container">
+          <div class="benefits__inner">
+            <h2 class="benefits__title title">
+              <span>Выгоды посещения </span>фитнес клуба
+            </h2>
+            <div class="benefits__card-wrapper">
+              <div class="benefits__card">
+                <div class="benefits__card-img">
+                  <img src="img/icons/benefits-1.png" alt="">
+                </div>
+                <h4 class="benefits__card-title">
+                  Красивая фигура
+                </h4>
+                <p class="benefits__card-text">
+                  Мы выбираем быть красивыми, здоровыми и гармоничными
+                </p>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__card-img">
+                  <img src="img/icons/benefits-2.png" alt="">
+                </div>
+                <h4 class="benefits__card-title">
+                  Спа
+                </h4>
+                <p class="benefits__card-text">
+                  В клубную карту входит посещенние СПА и бассейна
+                </p>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__card-img">
+                  <img src="img/icons/benefits-3.png" alt="">
+                </div>
+                <h4 class="benefits__card-title">
+                  Подходит всем
+                </h4>
+                <p class="benefits__card-text">
+                  Фитнес программы для всех уровней подготовки
+                </p>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__card-img">
+                  <img src="img/icons/benefits-4.png" alt="">
+                </div>
+                <h4 class="benefits__card-title">
+                  Опытные тренеры
+                </h4>
+                <p class="benefits__card-text">
+                  Фитнес программы для всех уровней подготовки
+                </p>
+              </div>
+            </div>
+            <div class="benefits__brands-wrapper">
+              <a class="benefits__brands-img" href="#">
+                <img src="img/icons/brands/moreon-1.png" alt="">
+              </a>
+              <a class="benefits__brands-img" href="#">
+                <img src="img/icons/brands/termy.png" alt="">
+              </a>
+              <a class="benefits__brands-img" href="#">
+                <img src="img/icons/brands/moreon-2.png" alt="">
+              </a>
+              <a class="benefits__brands-img" href="#">
+                <img src="img/icons/brands/moreon-3.png" alt="">
+              </a>
+              <a class="benefits__brands-img" href="#">
+                <img src="img/icons/brands/event.png" alt="">
+              </a>
+              <a class="benefits__brands-img" href="#">
+                <img src="img/icons/brands/port.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__testimonials testimonials">
+        <div class="container">
+          <div class="testimonials__inner">
+            <h2 class="testimonials__title title">
+              <span>Отзывы</span>
+            </h2>
+            <div class="testimonials__slider-container">
+              <button class="testimonials__prev" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <button class="testimonials__next" type="button">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                    fill="white" fill-opacity="0.6" />
+                </svg>
+              </button>
+              <div class="testimonials__slider swiper">
+                <div class="testimonials__wrapper swiper-wrapper">
+                  <div class="testimonials__slide swiper-slide">
+                    <div class="testimonials__slide-top">
+                      <span class="testimonials__slide-name">
+                        Ангелина
+                      </span>
+                      <div class="rating">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" value="1" name="rating">
+                            <input type="radio" class="rating__item" value="2" name="rating">
+                            <input type="radio" class="rating__item" value="3" name="rating">
+                            <input type="radio" class="rating__item" value="4" name="rating">
+                            <input type="radio" class="rating__item" value="5" name="rating">
+                          </div>
+                        </div>
+                        <div class="rating__value">4.5</div>
+                      </div>
+                    </div>
+                    <p class="testimonials__slide-text">
+                      Очень хорошие тренажёры и красивый дизайн зала. Занимаешься в хорошем настроении из-за больших
+                      панорамных окон и классного заряжающего плейлиста в зале.большое количество групповых тренировок
+                      на любой вкус.
+                    </p>
+                  </div>
+                  <div class="testimonials__slide swiper-slide">
+                    <div class="testimonials__slide-top">
+                      <span class="testimonials__slide-name">
+                        Маша
+                      </span>
+                      <div class="rating">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" value="1" name="rating">
+                            <input type="radio" class="rating__item" value="2" name="rating">
+                            <input type="radio" class="rating__item" value="3" name="rating">
+                            <input type="radio" class="rating__item" value="4" name="rating">
+                            <input type="radio" class="rating__item" value="5" name="rating">
+                          </div>
+                        </div>
+                        <div class="rating__value">5</div>
+                      </div>
+                    </div>
+                    <p class="testimonials__slide-text">
+                      Самый лучший фитнес! Очень круто обновились в этом году, заниматься ещё интереснее)))
+                      профессиональный тренерский состав, современное оборудование, много места) всем рекомендую!
+                    </p>
+                  </div>
+                  <div class="testimonials__slide swiper-slide">
+                    <div class="testimonials__slide-top">
+                      <span class="testimonials__slide-name">
+                        Александра
+                      </span>
+                      <div class="rating">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" value="1" name="rating">
+                            <input type="radio" class="rating__item" value="2" name="rating">
+                            <input type="radio" class="rating__item" value="3" name="rating">
+                            <input type="radio" class="rating__item" value="4" name="rating">
+                            <input type="radio" class="rating__item" value="5" name="rating">
+                          </div>
+                        </div>
+                        <div class="rating__value">5</div>
+                      </div>
+                    </div>
+                    <p class="testimonials__slide-text">
+                      Очень крутой комплекс, мега-отзывчивый персонал, оборудование новейшее, хожу сюда с открытия, не
+                      могу нарадоваться!
+                    </p>
+                  </div>
+                  <div class="testimonials__slide swiper-slide">
+                    <div class="testimonials__slide-top">
+                      <span class="testimonials__slide-name">
+                        Сергей
+                      </span>
+                      <div class="rating">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" value="1" name="rating">
+                            <input type="radio" class="rating__item" value="2" name="rating">
+                            <input type="radio" class="rating__item" value="3" name="rating">
+                            <input type="radio" class="rating__item" value="4" name="rating">
+                            <input type="radio" class="rating__item" value="5" name="rating">
+                          </div>
+                        </div>
+                        <div class="rating__value">4</div>
+                      </div>
+                    </div>
+                    <p class="testimonials__slide-text">
+                      Прекрасное место. Чистый, большой бассейн. Отличный СПА центр с банным комплексом. Большой,
+                      просторный зал, много групповых на любой вкус. После тренировки можно зайти в кафе покушать. Для
+                      меня Мореон это не фитнес комплекс, а полноценный развлекательный центр.
+                    </p>
+                  </div>
+                  <div class="testimonials__slide swiper-slide">
+                    <div class="testimonials__slide-top">
+                      <span class="testimonials__slide-name">
+                        Наталья
+                      </span>
+                      <div class="rating">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" value="1" name="rating">
+                            <input type="radio" class="rating__item" value="2" name="rating">
+                            <input type="radio" class="rating__item" value="3" name="rating">
+                            <input type="radio" class="rating__item" value="4" name="rating">
+                            <input type="radio" class="rating__item" value="5" name="rating">
+                          </div>
+                        </div>
+                        <div class="rating__value">4</div>
+                      </div>
+                    </div>
+                    <p class="testimonials__slide-text">
+                      Хожу в фитнес Мореона уже 2 года, в восторге, клуб расширяется, пополняется новым оборудованием,
+                      есть бассейн, зона единоборств, кроссфита. Недавно завезли новые кардиотренажеры. В абонемент у
+                      меня входит ещё посещение спа центра. Там тоже очень комфортно, особенно, что в отличие от терм,
+                      туда пускают детей только с 14 лет.
+                    </p>
+                  </div>
+                  <div class="testimonials__slide swiper-slide">
+                    <div class="testimonials__slide-top">
+                      <span class="testimonials__slide-name">
+                        Надежда
+                      </span>
+                      <div class="rating">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" value="1" name="rating">
+                            <input type="radio" class="rating__item" value="2" name="rating">
+                            <input type="radio" class="rating__item" value="3" name="rating">
+                            <input type="radio" class="rating__item" value="4" name="rating">
+                            <input type="radio" class="rating__item" value="5" name="rating">
+                          </div>
+                        </div>
+                        <div class="rating__value">4.5</div>
+                      </div>
+                    </div>
+                    <p class="testimonials__slide-text">
+                      Хожу уже год, обычно после работы в 9—10 вечера, народу мало в это время, просторно. Бассейн на 5
+                      дорожек. А ещё после зала хожу в спа, отлично расслабляет. Приятно, что халаты дают при посещении.
+                      Открыли новые зоны единоборств и подарили тренировку, это приятно
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials__pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__children children" id="children">
+        <div class="container">
+          <div class="children__inner">
+            <div class="children__img">
+              <img src="img/content/children.png" alt="">
+            </div>
+            <h2 class="children__title title">
+              <span>Детский фитнес</span>
+            </h2>
+            <div class="children__text">
+              <p>
+                Детский фитнес “Мореон” – это всесторонне развитие вашего ребенка от 2 месяцев до 16 лет. Наша задача –
+                раскрыть способности ребенка через игру и теплые доверительные отношения. Опытные педагоги детского
+                центра Мореон проводят занятия по особой методике, вызывая большой интерес к спорту, творчеству и
+                науке.
+                Футбол, танцы, бокс, плавание, гимнастика, скалолазание, изо, керамика, вокал – выбирайте, что по
+                душе.
+              </p>
+              <p>
+                Если Ваш ребенок еще не знает чем хочет заниматься в жизни и к чему у него есть предрасположенность —
+                мы с удовольствием поможем разобраться в этом на пробных занятиях.
+              </p>
+              <p>
+                Занятия в детском центре Мореон — залог здорового и гармоничного развития личности!
+              </p>
+            </div>
+            <a class="button-children button-about" href="#">
+              Записаться на бесплатное пробное занятие
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__sauna sauna" id="sauna">
+        <div class="container">
+          <div class="sauna__inner">
+            <h2 class="sauna__title title">
+              <span>Бани и бассейны</span>
+            </h2>
+            <p class="sauna__text">
+              Мореон Фитнес предоставляет своим клиентам уникальные возможности для отдыха и оздоровления. Члены клуба
+              Мореон получают доступ к спортивному бассейну, бассейну «Золотые рыбки», банному комплексу «Термы» и
+              пространству Мореон SPA. В раздевалках фитнес-клуба работает солярий. В этом разделе Вы можете подробнее
+              ознакомиться с велнесс-возможностями Мореон Фитнес.
+            </p>
+            <a class="sauna__button button-about" href="#">
+              Записаться на гостевой визит
+            </a>
+            <div class="sauna__slider-inner">
+              <div class="sauna__slider-container">
+                <button class="sauna__prev" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                      fill="white">
+                    </path>
+                  </svg>
+                </button>
+                <button class="sauna__next" type="button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                      fill="white">
+                    </path>
+                  </svg>
+                </button>
+                <div class="sauna__slider swiper">
+                  <div class="sauna__wrapper swiper-wrapper">
+                    <div class="sauna__slide swiper-slide">
+                      <a class="sauna__link" data-fslightbox="gallery-sauna" href="img/content/swimming-pool.jpg">
+                        <img src="img/content/swimming-pool.jpg" alt="Бассейн">
+                      </a>
+                    </div>
+                    <div class="sauna__slide swiper-slide">
+                      <a class="sauna__link" data-fslightbox="gallery-sauna" href="img/content/sauna-1.jpg">
+                        <img src="img/content/sauna-1.jpg" alt="Бассейн">
+                      </a>
+                    </div>
+                    <div class="sauna__slide swiper-slide">
+                      <a class="sauna__link" data-fslightbox="gallery-sauna" href="img/content/sauna-2.jpg">
+                        <img src="img/content/sauna-2.jpg" alt="Бассейн">
+                      </a>
+                    </div>
+                    <div class="sauna__slide swiper-slide">
+                      <a class="sauna__link" data-fslightbox="gallery-sauna" href="img/content/sauna-3.jpg">
+                        <img src="img/content/sauna-3.jpg" alt="Бассейн">
+                      </a>
+                    </div>
+                    <div class="sauna__slide swiper-slide">
+                      <a class="sauna__link" data-fslightbox="gallery-sauna" href="img/content/sauna-4.jpg">
+                        <img src="img/content/sauna-4.jpg" alt="Бассейн">
+                      </a>
+                    </div>
+                    <div class="sauna__slide swiper-slide">
+                      <a class="sauna__link" data-fslightbox="gallery-sauna" href="img/content/sauna-5.jpg">
+                        <img src="img/content/sauna-5.jpg" alt="Бассейн">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="sauna__pagination"></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="main__bar bar">
+        <div class="container">
+          <div class="bar__inner">
+            <h2 class="bar__title title">
+              <span>Фитнес</span> бар
+            </h2>
+            <div class="bar__content-inner">
+              <div class="bar__slider-container">
+                <div class="bar__slider swiper">
+                  <button class="bar__prev" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.33468 6.21975L6.4478 0.323112C6.89493 -0.107703 7.61799 -0.107703 8.06513 0.323112C8.51149 0.753926 8.51149 1.45207 8.06513 1.88288L2.7599 6.99963L8.06513 12.1171C8.51149 12.5479 8.51149 13.2461 8.06513 13.6769C7.61799 14.1077 6.89493 14.1077 6.4478 13.6769L0.33468 7.77952C-0.11169 7.3487 -0.11169 6.65056 0.33468 6.21975Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <button class="bar__next" type="button">
+                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.06376 7.77989L1.95064 13.6765C1.5035 14.1073 0.780446 14.1073 0.333312 13.6765C-0.113057 13.2457 -0.113057 12.5476 0.333312 12.1168L5.63853 7L0.333312 1.88251C-0.113057 1.4517 -0.113057 0.753559 0.333312 0.322745C0.780446 -0.10807 1.5035 -0.10807 1.95064 0.322745L8.06376 6.22012C8.51013 6.65093 8.51013 7.34907 8.06376 7.77989Z"
+                        fill="white">
+                      </path>
+                    </svg>
+                  </button>
+                  <div class="bar__wrapper swiper-wrapper">
+                    <div class="bar__slide swiper-slide">
+                      <a class="bar__link" data-fslightbox="gallery" href="img/content/reseption-bar.jpg">
+                        <img src="img/content/reseption-bar.jpg" alt="Бар">
+                      </a>
+                    </div>
+                    <div class="bar__slide swiper-slide">
+                      <a class="bar__link" data-fslightbox="gallery" href="img/content/restaurant.jpg">
+                        <img src="img/content/restaurant.jpg" alt="Бар">
+                      </a>
+                    </div>
+                    <div class="bar__slide swiper-slide">
+                      <a class="bar__link" data-fslightbox="gallery" href="img/content/restaurant-port2.jpg">
+                        <img src="img/content/restaurant-port2.jpg" alt="Бар">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bar__info">
+                <h3>
+                  Фитнес бар
+                </h3>
+                <p>
+                  Зарядитесь энергией перед тренировкой и восстановите силы после!
+                  В нашем фитнес-баре для вас спортивные напитки и питание, а также коктейли, фреши, чай и кофе. Вы
+                  сможете повысить результативность тренировок, уменьшить чувство усталости, снизить вес благодаря
+                  продукции из ассортимента фитобара. Поможем построить тело мечты!
+                  <br>
+                  А персональные тренер подскажет, какой продукт повысит эффективность вашего тренировочного процесса.
+                </p>
+              </div>
+              <a class="bar__button" href="img/content/Menu-bar.pdf" target="_blank">
+                Смотреть меню
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__contacts contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <div class="contacts__info">
+              <h2 class="contacts__title title">
+                <span>Контакты</span>
+              </h2>
+              <address>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <span>
+                      Адрес:
+                    </span>
+                    г. Москва, м. Яснево, ул. Голубинская д. 16
+                  </li>
+                  <li class="contacts__item">
+                    <span>
+                      Телефон:
+                    </span>
+                    <a class="contacts_link" href="tel:+74958590370">
+                      +7 (495) 859-03-70
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <span>
+                      E-mail:
+                    </span>
+                    <a class="contacts_link" href="mailto:moreon@more-on.ru">
+                      moreon@more-on.ru
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="contacts__map" id="map"></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <div class="footer__top-column-time">
+              <a class="footer__logo" href="#">
+                <img src="img/icons/logo/logo-white.svg" alt="Логотип компании Moreon fitness">
+              </a>
+              <p>Время работы:</p>
+              <ul class="footer__time-list">
+                <li class="footer__time-item">
+                  Будни: 07:00 - 23:00
+                </li>
+                <li class="footer__time-item">
+                  Бассейн: 07:00 - 23:00
+                </li>
+                <li class="footer__time-item">
+                  Выходные: 09:00 - 23:00
+                </li>
+                <li class="footer__time-item">
+                  Бассейн: 09:00 - 23:00
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-column-areas">
+              <ul class="footer__areas-list">
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Тренажерный зал
+                  </a>
+                </li>
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Спортивный бассейн
+                  </a>
+                </li>
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Персональный тренинг
+                  </a>
+                </li>
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Аэробные и кардио программы
+                  </a>
+                </li>
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Скалодром для детей
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-column-info">
+              <ul class="footer__areas-list">
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Единоборства
+                  </a>
+                </li>
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Танцы
+                  </a>
+                </li>
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Фитнес-тестирование
+                  </a>
+                </li>
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Вакансии
+                  </a>
+                </li>
+                <li class="footer__area-item">
+                  <a class="footer__area-link" href="#">
+                    Подарочный сертификат
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <address class="footer__top-column-contact">
+              <ul class="footer__contact-list">
+                <li class="footer__contact-item">
+                  <img src="img/icons/socials/telegram-ft.svg" alt="">
+                  г. Москва, м. Яснево, ул. Голубинская д. 16
+                </li>
+                <li class="footer__contact-item">
+                  <img src="img/icons/phone.svg" alt="">
+                  <a class="footer__contact-number" href="tel:+74958590370">
+                    +7 (495) 859-03-70
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer__socials-list">
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="#">
+                    <img src="img/icons/socials/vk.svg" alt="">
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="#">
+                    <img src="img/icons/socials/Instagram.svg" alt="">
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="#">
+                    <img src="img/icons/socials/Facebook.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+              <p>
+                Скачать приложение
+              </p>
+              <div class="applications footer__applications">
+                <a class="footer__applications-link" href="https://play.google.com" target="_blank">
+                  <img src="img/decor/google-play.png" alt="Google-play">
+                </a>
+                <a class="footer__applications-link" href="https://www.apple.com/app-store/" target="_blank">
+                  <img src="img/decor/app-store.png" alt="App-store">
+                </a>
+              </div>
+            </address>
+
+          </div>
+          <div class="footer__line"></div>
+          <ul class="footer__bottom">
+            <li class="footer__bottom-item">
+              © АО Европейские технологии и сервис. 2023
+            </li>
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#">
+                Использование cookies
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#">
+                Политика обработки персональных данных
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#">
+                Правила посещения
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <div class="modal-about">
+    <div class="modal-about__window modal-window">
+      <a class="modal-cancel" href="#">
+        <div class="modal-cancel__line-left"></div>
+        <div class="modal-cancel__line-right"></div>
+      </a>
+      <h3 class="modal-about__title modal-title">
+        Оставьте свои контактные данные
+      </h3>
+      <p class="modal-about__text modal-text">
+        Наши менеджеры свяжутся с Вами в ближайшее время
+      </p>
+      <form class="modal-about__form">
+        <label class="modal-about__form-label field">
+          <input class="field__input" type="text" placeholder="Напишите ваше ФИО">
+        </label>
+        <input class="field__input" type="tel" placeholder="Напишите номер телефона">
+        <label class="modal-about__form-label field">
+          <textarea class="field__input" name="comment" spellcheck="true" rows="4"
+            placeholder="Напишите ваш комментарий"></textarea>
+        </label>
+        <label class="modal-about__check-label check-label">
+          <input class="modal-about__checkbox modal-checkbox modal-checkbox" type="checkbox">
+          <span>
+            Я <a href="#" target="_blank">согласен на обработку </a>предоставленных мной персональных данных, согласно
+            политике АО «Е.Т.С.», а также ознакомлен с <a href="#" target="_blank">правилами посещения</a> аквапарка,
+            СПА-комплекса, термального комплекса, боулинга и фитнеса
+          </span>
+        </label>
+        <button class="modal-about__button button" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-calculator">
+    <div class="modal-calculator__window modal-window">
+      <div class="modal-calculator__top">
+        <a class="modal-cancel" href="#">
+          <div class="modal-cancel__line-left"></div>
+          <div class="modal-cancel__line-right"></div>
+        </a>
+        <h3 class="modal-calculator__title modal-title">
+          Расчитайте стоимоть вашей <span>клубной карты</span>
+        </h3>
+      </div>
+      <form class="modal-calculator__form">
+        <div class="modal-calculator__inner">
+          <div class="modal-calculator__column">
+            <p class="modal-calculator__text">
+              Какие зоны вы хотите посетить:
+            </p>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="zone">
+              <span>
+                Фитнес
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="zone">
+              <span>
+                Термы + Фитнес
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="zone">
+              <span>
+                СПА + Фитнес
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="zone">
+              <span>
+                Фитнес + Термы + СПА
+              </span>
+            </label>
+            <p class="modal-calculator__text">
+              На какой срок нужна клубная карта?
+            </p>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="period">
+              <span>
+                1 год
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="period">
+              <span>
+                6 месяцев
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="period">
+              <span>
+                3 месяца
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="period">
+              <span>
+                Затрудняюсь ответить
+              </span>
+            </label>
+
+            <p class="modal-calculator__text">
+              Нужна ли Вам рассрочка?
+            </p>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="credit">
+              <span>
+                Да
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="credit">
+              <span>
+                Нет
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="credit">
+              <span>
+                Затрудняюсь ответить
+              </span>
+            </label>
+          </div>
+          <div class="modal-calculator__column">
+            <p class="modal-calculator__text">
+              Когда удобно посещать занятия?
+            </p>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="time">
+              <span>
+                Утром
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="time">
+              <span>
+                Днем
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="time">
+              <span>
+                Вечером
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="time">
+              <span>
+                В выходные
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="time">
+              <span>
+                В любое время
+              </span>
+            </label>
+            <p class="modal-calculator__text">
+              Нужен ли персональный тренер?
+            </p>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="trainer">
+              <span>
+                Да
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="trainer">
+              <span>
+                Нет
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="trainer">
+              <span>
+                Затрудняюсь ответить
+              </span>
+            </label>
+            <p class="modal-calculator__text">
+              Есть ли действующая карта другого фитнес-клуба?
+            </p>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="other">
+              <span>
+                Да
+              </span>
+            </label>
+            <label class="modal-calculator__check-label">
+              <input class="modal-calculator__checkbox modal-checkbox" type="radio" name="other">
+              <span>
+                Нет
+              </span>
+            </label>
+          </div>
+        </div>
+        <button class="modal-calculator__button button" type="submit">
+          Перейти к последнему шагу
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-contact">
+    <div class="modal-contact__window modal-window">
+      <a class="modal-cancel" href="#">
+        <div class="modal-cancel__line-left"></div>
+        <div class="modal-cancel__line-right"></div>
+      </a>
+      <h3 class="modal-contact__title modal-title">
+        Контактные данные
+      </h3>
+      <p class="modal-contact__text modal-text">
+        Оставьте свои контактные данные и мы вам перезвоним
+      </p>
+      <form class="modal-contact__form">
+        <label class="modal-contact__form-label field">
+          <input class="field__input" type="text" placeholder="Напишите ваше ФИО">
+        </label>
+        <input class="field__input" type="tel" placeholder="Напишите номер телефона">
+        <label class="modal-contact__check-label check-label">
+          <input class="modal-contact__checkbox modal-checkbox modal-checkbox" type="checkbox">
+          <span>
+            Соглашаюсь с условиями обработки данных
+          </span>
+        </label>
+        <button class="modal-contact__button button" type="submit">
+          Оставить заявку на звонок
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-thanks">
+    <div class="modal-thanks__window modal-window">
+      <a class="modal-cancel" href="#">
+        <div class="modal-cancel__line-left"></div>
+        <div class="modal-cancel__line-right"></div>
+      </a>
+      <h3 class="modal-thanks__title modal-title">
+        Спасибо!
+      </h3>
+      <p class="modal-thanks__text modal-text">
+        Менеджер свяжется с Вами в ближайшее время.
+      </p>
+      <button class="modal-thanks__button button" type="submit">
+        Хорошо!
+      </button>
+    </div>
+  </div>
+
+  <div class="modal-freeze">
+    <div class="modal-freeze__window modal-window">
+      <a class="modal-cancel" href="#">
+        <div class="modal-cancel__line-left"></div>
+        <div class="modal-cancel__line-right"></div>
+      </a>
+      <h3 class="modal-freeze__title modal-title">
+        Оставьте свои контактные данные
+      </h3>
+      <p class="modal-freeze__text modal-text">
+        Наши менеджеры свяжутся с Вами в ближайшее время
+      </p>
+      <form class="modal-freeze__form">
+        <label class="modal-freeze__form-label field">
+          <input class="field__input" type="text" placeholder="Напишите ваше ФИО">
+        </label>
+        <input class="field__input" type="tel" placeholder="Напишите номер телефона">
+        <div class="field__date-wrapper">
+          <label for="date">
+            Дата начала
+            <br>
+            заморозки:
+          </label>
+          <input class="field__input field__input-date" type="text" id="date" name="date" placeholder="дд.мм.гггг">
+        </div>
+        <label class="modal-freeze__form-label field">
+          <textarea class="field__input" name="comment" spellcheck="true" rows="3"
+            placeholder="Напишите на сколько дней Вы хотите заморозить карту (не менее 10 дней!)"></textarea>
+        </label>
+        <label class="modal-freeze__check-label check-label">
+          <input class="modal-freeze__checkbox modal-checkbox modal-checkbox" type="checkbox">
+          <span>
+            Я <a href="#" target="_blank">согласен на обработку </a>предоставленных мной персональных данных, согласно
+            политике АО «Е.Т.С.», а также ознакомлен с <a href="#" target="_blank">правилами посещения</a> аквапарка,
+            СПА-комплекса, термального комплекса, боулинга и фитнеса
+          </span>
+        </label>
+        <button class="modal-freeze__button button" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/fslightbox.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=15d15fa2-6a64-4f35-86e5-243b78d81a93"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
